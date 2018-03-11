@@ -12,7 +12,7 @@ public:
             while(i)
              {
                  int tmp = ret*10 + i%10;
-                 if(tmp/10 != ret)
+                 if(tmp/10 != ret)  //判断是否溢出
                     return false;
                  i /= 10;
                  ret = tmp;
